@@ -21,6 +21,7 @@ class GameScene: SKScene, SKPhysicsContactDelegate {
     let opQueue = OperationQueue()
     var gravity = CGVector(dx: 0, dy: 0)
     var oof = SKAction.playSoundFileNamed("oof.mp3", waitForCompletion: false)
+    var picture = "jeff.jpeg"
     var oofed: Bool = false
     
     // body parts
@@ -31,7 +32,7 @@ class GameScene: SKScene, SKPhysicsContactDelegate {
     var leftLeg: SKShapeNode?
     var rightLeg: SKShapeNode?
     
-    var face: SKLabelNode?
+    var face: SKSpriteNode?
     var faceText: String = ": /";
     
     // pin joints
@@ -68,11 +69,9 @@ class GameScene: SKScene, SKPhysicsContactDelegate {
         self.head?.fillColor = .red;
         self.head?.position = CGPoint(x: 0, y: w * 1.5);
         self.head?.physicsBody = SKPhysicsBody(circleOfRadius: w / 2)
-        
         self.head?.physicsBody?.mass = self.headMass;
-        self.face = SKLabelNode(text: self.faceText);
-        self.face?.fontSize = 70;
-        self.face?.fontColor = .black;
+        
+        // face details
         self.face?.position = CGPoint(x: 0, y: -(w * 0.25));
         
         // left arm details
@@ -153,6 +152,11 @@ class GameScene: SKScene, SKPhysicsContactDelegate {
         let pinPos4 = self.body?.convert(CGPoint(x: (w / 2), y: -(w * 1.5) / 2), to: self);
         rightLegJoint = SKPhysicsJointPin.joint(withBodyA: (self.body?.physicsBody!)!, bodyB: (self.rightLeg?.physicsBody!)!, anchor: (pinPos4)!);
         self.physicsWorld.add((rightLegJoint)!);
+        
+        // add face
+//        if let x = self.face {
+//            addPhotoToFrame(photoFrame: x)
+//        }
     }
     
     
@@ -222,7 +226,7 @@ class GameScene: SKScene, SKPhysicsContactDelegate {
     }
     func goOOf() {
         if let x = self.head?.position.x {
-            if x > 320 || x < -320 {
+            if x > 300 || x < -300 {
                 if self.oofed == false {
                     playSound(sound: oof)
                     self.oofed = true
@@ -243,5 +247,17 @@ class GameScene: SKScene, SKPhysicsContactDelegate {
                 self.oofed = false
             }
         }
+    }
+    func addPhotoToFrame(photoFrame: SKSpriteNode) {
+        let pictureNode = SKSpriteNode(imageNamed: self.picture)
+        pictureNode.name = "PictureNode"
+        
+        let maskNode = SKSpriteNode(imageNamed: self.picture)
+        maskNode.name = "Mask"
+        
+        let cropNode = SKCropNode()
+        cropNode.addChild(pictureNode)
+        cropNode.maskNode = maskNode
+        photoFrame.addChild(cropNode)
     }
 }
