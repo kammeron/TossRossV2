@@ -20,7 +20,8 @@ class GameScene: SKScene, SKPhysicsContactDelegate {
     var motionManager = CMMotionManager()
     let opQueue = OperationQueue()
     var gravity = CGVector(dx: 0, dy: 0)
-    var sound = SKAction.playSoundFileNamed("oof.mp3", waitForCompletion: false)
+    var oof = SKAction.playSoundFileNamed("oof.mp3", waitForCompletion: false)
+    var oofed: Bool = false
     
     // body parts
     var body: SKShapeNode?
@@ -47,29 +48,10 @@ class GameScene: SKScene, SKPhysicsContactDelegate {
     
     override func didMove(to view: SKView) {
         
-        // Get label node from scene and store it for use later
-//        self.label = self.childNode(withName: "//helloLabel") as? SKLabelNode
-//        if let label = self.label {
-//            label.alpha = 0.0
-//            label.run(SKAction.fadeIn(withDuration: 2.0))
-//        }
         physicsBody = SKPhysicsBody(edgeLoopFrom: frame);
-
         self.buildBody();
         startReadingMotionData()
         
-        // Create shape node to use during mouse interaction
-//        let w = (self.size.width + self.size.height) * 0.05
-//        self.spinnyNode = SKShapeNode.init(rectOf: CGSize.init(width: w, height: w), cornerRadius: w * 0.3)
-//
-//        if let spinnyNode = self.spinnyNode {
-//            spinnyNode.lineWidth = 2.5
-//
-//            spinnyNode.run(SKAction.repeatForever(SKAction.rotate(byAngle: CGFloat(Double.pi), duration: 1)))
-//            spinnyNode.run(SKAction.sequence([SKAction.wait(forDuration: 0.5),
-//                                              SKAction.fadeOut(withDuration: 0.5),
-//                                              SKAction.removeFromParent()]))
-//        }
     }
     
     func buildBody() {
@@ -148,17 +130,8 @@ class GameScene: SKScene, SKPhysicsContactDelegate {
             self.addChild(h);
         }
         
-        // head joint
-//        let headPos = self.head?.convert(CGPoint(x: 0, y: (w * 1.25)), to: self);
-//        let neckPos = self.body?.convert(CGPoint(x: 0, y: (w / 3)), to: self);
-//        let headPos = CGPoint(x: 0, y: (w * 0.1));
-//        let neckPos = CGPoint(x: 0, y: (w / 3));
-//        headJoint = SKPhysicsJointPin.joint(withBodyA: (self.body?.physicsBody!)!, bodyB: (self.head?.physicsBody!)!, anchorA: (neckPos), anchorB: (headPos));
         let headPos = self.body?.convert(CGPoint(x: 0, y: (w / 3)), to: self)
         headJoint = SKPhysicsJointPin.joint(withBodyA: (self.body?.physicsBody!)!, bodyB: (self.head?.physicsBody!)!, anchor: (headPos)!);
-//        headJoint?.maxLength = self.headJointMaxLength;
-//        headJoint?.damping = 7;
-//        headJoint?.frequency = 10;
         self.physicsWorld.add((headJoint)!);
         
         // left arm joint
@@ -188,6 +161,7 @@ class GameScene: SKScene, SKPhysicsContactDelegate {
             if let ross = self.body {
                 ross.position = pos;
                 self.screenTouched = true;
+                print(pos)
             }
         }
         
@@ -207,7 +181,7 @@ class GameScene: SKScene, SKPhysicsContactDelegate {
         if let label = self.label {
             label.run(SKAction.init(named: "Pulse")!, withKey: "fadeInOut")
         }
-        playSound(sound: sound)
+        playSound(sound: oof)
 
         for t in touches { self.touchDown(atPoint: t.location(in: self)) }
     }
@@ -239,10 +213,35 @@ class GameScene: SKScene, SKPhysicsContactDelegate {
                 self.gravity = CGVector(dx: mydata.gravity.x * 100, dy: mydata.gravity.y * 100)
                 self.physicsWorld.gravity = self.gravity
             }
+            self.goOOf()
         }
     }
     func playSound(sound : SKAction)
     {
         run(sound)
+    }
+    func goOOf() {
+        if let x = self.head?.position.x {
+            if x > 320 || x < -320 {
+                if self.oofed == false {
+                    playSound(sound: oof)
+                    self.oofed = true
+                }
+            }
+            else {
+                self.oofed = false
+            }
+        }
+        if let y = self.head?.position.y {
+            if y > 600 || y < -600 {
+                if self.oofed == false {
+                    playSound(sound: oof)
+                    self.oofed = true
+                }
+            }
+            else {
+                self.oofed = false
+            }
+        }
     }
 }
