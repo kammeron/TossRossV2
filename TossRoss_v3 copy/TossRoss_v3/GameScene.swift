@@ -15,6 +15,7 @@ class GameScene: SKScene, SKPhysicsContactDelegate {
     private var label : SKLabelNode?
     private var spinnyNode : SKShapeNode?
     
+    var gameVC: GameViewController!
     var menuVC: MenuViewController!
     
     var screenTouched: Bool = false;

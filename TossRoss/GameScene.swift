@@ -32,8 +32,8 @@ class GameScene: SKScene, SKPhysicsContactDelegate {
     var leftLeg: SKShapeNode?
     var rightLeg: SKShapeNode?
     
-    var face: SKSpriteNode?
-    var faceText: String = ": /";
+    var face: SKLabelNode?
+    var faceText: String = ": >";
     
     // pin joints
     var headJoint: SKPhysicsJointPin?
@@ -72,6 +72,10 @@ class GameScene: SKScene, SKPhysicsContactDelegate {
         self.head?.physicsBody?.mass = self.headMass;
         
         // face details
+        self.face = SKLabelNode(fontNamed: "AvenirNext-Bold");
+        self.face?.text = self.faceText;
+        self.face?.fontSize = 70;
+        self.face?.fontColor = .black;
         self.face?.position = CGPoint(x: 0, y: -(w * 0.25));
         
         // left arm details
@@ -165,7 +169,6 @@ class GameScene: SKScene, SKPhysicsContactDelegate {
             if let ross = self.body {
                 ross.position = pos;
                 self.screenTouched = true;
-                print(pos)
             }
         }
         
