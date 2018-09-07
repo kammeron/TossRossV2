@@ -7,68 +7,72 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		3ACF34662141E87900F68608 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3ACF34652141E87900F68608 /* AppDelegate.swift */; };
-		3ACF34682141E87900F68608 /* GameScene.sks in Resources */ = {isa = PBXBuildFile; fileRef = 3ACF34672141E87900F68608 /* GameScene.sks */; };
-		3ACF346C2141E87900F68608 /* GameScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3ACF346B2141E87900F68608 /* GameScene.swift */; };
-		3ACF346E2141E87900F68608 /* GameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3ACF346D2141E87900F68608 /* GameViewController.swift */; };
-		3ACF34712141E87900F68608 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3ACF346F2141E87900F68608 /* Main.storyboard */; };
-		3ACF34732141E87B00F68608 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3ACF34722141E87B00F68608 /* Assets.xcassets */; };
-		3ACF34762141E87B00F68608 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3ACF34742141E87B00F68608 /* LaunchScreen.storyboard */; };
-		3ACF34812141E87B00F68608 /* TossRossTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3ACF34802141E87B00F68608 /* TossRossTests.swift */; };
-		3ACF348C2141E87B00F68608 /* TossRossUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3ACF348B2141E87B00F68608 /* TossRossUITests.swift */; };
+		3ACF349C2142E1C400F68608 /* oof.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 3ACF349B2142E1C400F68608 /* oof.mp3 */; };
+		3E50AAEC2141D97F006FBA94 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E50AAEB2141D97F006FBA94 /* AppDelegate.swift */; };
+		3E50AAEE2141D97F006FBA94 /* GameScene.sks in Resources */ = {isa = PBXBuildFile; fileRef = 3E50AAED2141D97F006FBA94 /* GameScene.sks */; };
+		3E50AAF02141D97F006FBA94 /* Actions.sks in Resources */ = {isa = PBXBuildFile; fileRef = 3E50AAEF2141D97F006FBA94 /* Actions.sks */; };
+		3E50AAF22141D97F006FBA94 /* GameScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E50AAF12141D97F006FBA94 /* GameScene.swift */; };
+		3E50AAF42141D97F006FBA94 /* GameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E50AAF32141D97F006FBA94 /* GameViewController.swift */; };
+		3E50AAF72141D97F006FBA94 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3E50AAF52141D97F006FBA94 /* Main.storyboard */; };
+		3E50AAF92141D97F006FBA94 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3E50AAF82141D97F006FBA94 /* Assets.xcassets */; };
+		3E50AAFC2141D97F006FBA94 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3E50AAFA2141D97F006FBA94 /* LaunchScreen.storyboard */; };
+		3E50AB072141D980006FBA94 /* TossRossTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E50AB062141D980006FBA94 /* TossRossTests.swift */; };
+		3E50AB122141D980006FBA94 /* TossRossUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E50AB112141D980006FBA94 /* TossRossUITests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		3ACF347D2141E87B00F68608 /* PBXContainerItemProxy */ = {
+		3E50AB032141D97F006FBA94 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
-			containerPortal = 3ACF345A2141E87900F68608 /* Project object */;
+			containerPortal = 3E50AAE02141D97E006FBA94 /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = 3ACF34612141E87900F68608;
+			remoteGlobalIDString = 3E50AAE72141D97E006FBA94;
 			remoteInfo = TossRoss;
 		};
-		3ACF34882141E87B00F68608 /* PBXContainerItemProxy */ = {
+		3E50AB0E2141D980006FBA94 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
-			containerPortal = 3ACF345A2141E87900F68608 /* Project object */;
+			containerPortal = 3E50AAE02141D97E006FBA94 /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = 3ACF34612141E87900F68608;
+			remoteGlobalIDString = 3E50AAE72141D97E006FBA94;
 			remoteInfo = TossRoss;
 		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		3ACF34622141E87900F68608 /* TossRoss.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TossRoss.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		3ACF34652141E87900F68608 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		3ACF34672141E87900F68608 /* GameScene.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = GameScene.sks; sourceTree = "<group>"; };
-		3ACF346B2141E87900F68608 /* GameScene.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameScene.swift; sourceTree = "<group>"; };
-		3ACF346D2141E87900F68608 /* GameViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameViewController.swift; sourceTree = "<group>"; };
-		3ACF34702141E87900F68608 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		3ACF34722141E87B00F68608 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		3ACF34752141E87B00F68608 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
-		3ACF34772141E87B00F68608 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		3ACF347C2141E87B00F68608 /* TossRossTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TossRossTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		3ACF34802141E87B00F68608 /* TossRossTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TossRossTests.swift; sourceTree = "<group>"; };
-		3ACF34822141E87B00F68608 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		3ACF34872141E87B00F68608 /* TossRossUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TossRossUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		3ACF348B2141E87B00F68608 /* TossRossUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TossRossUITests.swift; sourceTree = "<group>"; };
-		3ACF348D2141E87B00F68608 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3ACF349B2142E1C400F68608 /* oof.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = oof.mp3; path = ../../../oof.mp3; sourceTree = "<group>"; };
+		3E50AAE82141D97E006FBA94 /* TossRoss.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TossRoss.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		3E50AAEB2141D97F006FBA94 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		3E50AAED2141D97F006FBA94 /* GameScene.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = GameScene.sks; sourceTree = "<group>"; };
+		3E50AAEF2141D97F006FBA94 /* Actions.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = Actions.sks; sourceTree = "<group>"; };
+		3E50AAF12141D97F006FBA94 /* GameScene.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameScene.swift; sourceTree = "<group>"; };
+		3E50AAF32141D97F006FBA94 /* GameViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameViewController.swift; sourceTree = "<group>"; };
+		3E50AAF62141D97F006FBA94 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		3E50AAF82141D97F006FBA94 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		3E50AAFB2141D97F006FBA94 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		3E50AAFD2141D97F006FBA94 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3E50AB022141D97F006FBA94 /* TossRossTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TossRossTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		3E50AB062141D980006FBA94 /* TossRossTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TossRossTests.swift; sourceTree = "<group>"; };
+		3E50AB082141D980006FBA94 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3E50AB0D2141D980006FBA94 /* TossRossUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TossRossUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		3E50AB112141D980006FBA94 /* TossRossUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TossRossUITests.swift; sourceTree = "<group>"; };
+		3E50AB132141D980006FBA94 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		3ACF345F2141E87900F68608 /* Frameworks */ = {
+		3E50AAE52141D97E006FBA94 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		3ACF34792141E87B00F68608 /* Frameworks */ = {
+		3E50AAFF2141D97F006FBA94 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		3ACF34842141E87B00F68608 /* Frameworks */ = {
+		3E50AB0A2141D980006FBA94 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -78,55 +82,65 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		3ACF34592141E87900F68608 = {
+		3ACF349A2142E19400F68608 /* sounds */ = {
 			isa = PBXGroup;
 			children = (
-				3ACF34642141E87900F68608 /* TossRoss */,
-				3ACF347F2141E87B00F68608 /* TossRossTests */,
-				3ACF348A2141E87B00F68608 /* TossRossUITests */,
-				3ACF34632141E87900F68608 /* Products */,
+				3ACF349B2142E1C400F68608 /* oof.mp3 */,
+			);
+			path = sounds;
+			sourceTree = "<group>";
+		};
+		3E50AADF2141D97E006FBA94 = {
+			isa = PBXGroup;
+			children = (
+				3E50AAEA2141D97E006FBA94 /* TossRoss */,
+				3E50AB052141D97F006FBA94 /* TossRossTests */,
+				3E50AB102141D980006FBA94 /* TossRossUITests */,
+				3E50AAE92141D97E006FBA94 /* Products */,
 			);
 			sourceTree = "<group>";
 		};
-		3ACF34632141E87900F68608 /* Products */ = {
+		3E50AAE92141D97E006FBA94 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				3ACF34622141E87900F68608 /* TossRoss.app */,
-				3ACF347C2141E87B00F68608 /* TossRossTests.xctest */,
-				3ACF34872141E87B00F68608 /* TossRossUITests.xctest */,
+				3E50AAE82141D97E006FBA94 /* TossRoss.app */,
+				3E50AB022141D97F006FBA94 /* TossRossTests.xctest */,
+				3E50AB0D2141D980006FBA94 /* TossRossUITests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		3ACF34642141E87900F68608 /* TossRoss */ = {
+		3E50AAEA2141D97E006FBA94 /* TossRoss */ = {
 			isa = PBXGroup;
 			children = (
-				3ACF34652141E87900F68608 /* AppDelegate.swift */,
-				3ACF34672141E87900F68608 /* GameScene.sks */,
-				3ACF346B2141E87900F68608 /* GameScene.swift */,
-				3ACF346D2141E87900F68608 /* GameViewController.swift */,
-				3ACF346F2141E87900F68608 /* Main.storyboard */,
-				3ACF34722141E87B00F68608 /* Assets.xcassets */,
-				3ACF34742141E87B00F68608 /* LaunchScreen.storyboard */,
-				3ACF34772141E87B00F68608 /* Info.plist */,
+				3ACF349A2142E19400F68608 /* sounds */,
+				3E50AAEB2141D97F006FBA94 /* AppDelegate.swift */,
+				3E50AAED2141D97F006FBA94 /* GameScene.sks */,
+				3E50AAEF2141D97F006FBA94 /* Actions.sks */,
+				3E50AAF12141D97F006FBA94 /* GameScene.swift */,
+				3E50AAF32141D97F006FBA94 /* GameViewController.swift */,
+				3E50AAF52141D97F006FBA94 /* Main.storyboard */,
+				3E50AAF82141D97F006FBA94 /* Assets.xcassets */,
+				3E50AAFA2141D97F006FBA94 /* LaunchScreen.storyboard */,
+				3E50AAFD2141D97F006FBA94 /* Info.plist */,
 			);
 			path = TossRoss;
 			sourceTree = "<group>";
 		};
-		3ACF347F2141E87B00F68608 /* TossRossTests */ = {
+		3E50AB052141D97F006FBA94 /* TossRossTests */ = {
 			isa = PBXGroup;
 			children = (
-				3ACF34802141E87B00F68608 /* TossRossTests.swift */,
-				3ACF34822141E87B00F68608 /* Info.plist */,
+				3E50AB062141D980006FBA94 /* TossRossTests.swift */,
+				3E50AB082141D980006FBA94 /* Info.plist */,
 			);
 			path = TossRossTests;
 			sourceTree = "<group>";
 		};
-		3ACF348A2141E87B00F68608 /* TossRossUITests */ = {
+		3E50AB102141D980006FBA94 /* TossRossUITests */ = {
 			isa = PBXGroup;
 			children = (
-				3ACF348B2141E87B00F68608 /* TossRossUITests.swift */,
-				3ACF348D2141E87B00F68608 /* Info.plist */,
+				3E50AB112141D980006FBA94 /* TossRossUITests.swift */,
+				3E50AB132141D980006FBA94 /* Info.plist */,
 			);
 			path = TossRossUITests;
 			sourceTree = "<group>";
@@ -134,13 +148,13 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		3ACF34612141E87900F68608 /* TossRoss */ = {
+		3E50AAE72141D97E006FBA94 /* TossRoss */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 3ACF34902141E87B00F68608 /* Build configuration list for PBXNativeTarget "TossRoss" */;
+			buildConfigurationList = 3E50AB162141D980006FBA94 /* Build configuration list for PBXNativeTarget "TossRoss" */;
 			buildPhases = (
-				3ACF345E2141E87900F68608 /* Sources */,
-				3ACF345F2141E87900F68608 /* Frameworks */,
-				3ACF34602141E87900F68608 /* Resources */,
+				3E50AAE42141D97E006FBA94 /* Sources */,
+				3E50AAE52141D97E006FBA94 /* Frameworks */,
+				3E50AAE62141D97E006FBA94 /* Resources */,
 			);
 			buildRules = (
 			);
@@ -148,69 +162,69 @@
 			);
 			name = TossRoss;
 			productName = TossRoss;
-			productReference = 3ACF34622141E87900F68608 /* TossRoss.app */;
+			productReference = 3E50AAE82141D97E006FBA94 /* TossRoss.app */;
 			productType = "com.apple.product-type.application";
 		};
-		3ACF347B2141E87B00F68608 /* TossRossTests */ = {
+		3E50AB012141D97F006FBA94 /* TossRossTests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 3ACF34932141E87B00F68608 /* Build configuration list for PBXNativeTarget "TossRossTests" */;
+			buildConfigurationList = 3E50AB192141D980006FBA94 /* Build configuration list for PBXNativeTarget "TossRossTests" */;
 			buildPhases = (
-				3ACF34782141E87B00F68608 /* Sources */,
-				3ACF34792141E87B00F68608 /* Frameworks */,
-				3ACF347A2141E87B00F68608 /* Resources */,
+				3E50AAFE2141D97F006FBA94 /* Sources */,
+				3E50AAFF2141D97F006FBA94 /* Frameworks */,
+				3E50AB002141D97F006FBA94 /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				3ACF347E2141E87B00F68608 /* PBXTargetDependency */,
+				3E50AB042141D97F006FBA94 /* PBXTargetDependency */,
 			);
 			name = TossRossTests;
 			productName = TossRossTests;
-			productReference = 3ACF347C2141E87B00F68608 /* TossRossTests.xctest */;
+			productReference = 3E50AB022141D97F006FBA94 /* TossRossTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
-		3ACF34862141E87B00F68608 /* TossRossUITests */ = {
+		3E50AB0C2141D980006FBA94 /* TossRossUITests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 3ACF34962141E87B00F68608 /* Build configuration list for PBXNativeTarget "TossRossUITests" */;
+			buildConfigurationList = 3E50AB1C2141D980006FBA94 /* Build configuration list for PBXNativeTarget "TossRossUITests" */;
 			buildPhases = (
-				3ACF34832141E87B00F68608 /* Sources */,
-				3ACF34842141E87B00F68608 /* Frameworks */,
-				3ACF34852141E87B00F68608 /* Resources */,
+				3E50AB092141D980006FBA94 /* Sources */,
+				3E50AB0A2141D980006FBA94 /* Frameworks */,
+				3E50AB0B2141D980006FBA94 /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				3ACF34892141E87B00F68608 /* PBXTargetDependency */,
+				3E50AB0F2141D980006FBA94 /* PBXTargetDependency */,
 			);
 			name = TossRossUITests;
 			productName = TossRossUITests;
-			productReference = 3ACF34872141E87B00F68608 /* TossRossUITests.xctest */;
+			productReference = 3E50AB0D2141D980006FBA94 /* TossRossUITests.xctest */;
 			productType = "com.apple.product-type.bundle.ui-testing";
 		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
-		3ACF345A2141E87900F68608 /* Project object */ = {
+		3E50AAE02141D97E006FBA94 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 0940;
 				LastUpgradeCheck = 0940;
-				ORGANIZATIONNAME = "Kammeron Nhieu";
+				ORGANIZATIONNAME = "Edward Shin";
 				TargetAttributes = {
-					3ACF34612141E87900F68608 = {
+					3E50AAE72141D97E006FBA94 = {
 						CreatedOnToolsVersion = 9.4.1;
 					};
-					3ACF347B2141E87B00F68608 = {
+					3E50AB012141D97F006FBA94 = {
 						CreatedOnToolsVersion = 9.4.1;
-						TestTargetID = 3ACF34612141E87900F68608;
+						TestTargetID = 3E50AAE72141D97E006FBA94;
 					};
-					3ACF34862141E87B00F68608 = {
+					3E50AB0C2141D980006FBA94 = {
 						CreatedOnToolsVersion = 9.4.1;
-						TestTargetID = 3ACF34612141E87900F68608;
+						TestTargetID = 3E50AAE72141D97E006FBA94;
 					};
 				};
 			};
-			buildConfigurationList = 3ACF345D2141E87900F68608 /* Build configuration list for PBXProject "TossRoss" */;
+			buildConfigurationList = 3E50AAE32141D97E006FBA94 /* Build configuration list for PBXProject "TossRoss" */;
 			compatibilityVersion = "Xcode 9.3";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -218,38 +232,40 @@
 				en,
 				Base,
 			);
-			mainGroup = 3ACF34592141E87900F68608;
-			productRefGroup = 3ACF34632141E87900F68608 /* Products */;
+			mainGroup = 3E50AADF2141D97E006FBA94;
+			productRefGroup = 3E50AAE92141D97E006FBA94 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				3ACF34612141E87900F68608 /* TossRoss */,
-				3ACF347B2141E87B00F68608 /* TossRossTests */,
-				3ACF34862141E87B00F68608 /* TossRossUITests */,
+				3E50AAE72141D97E006FBA94 /* TossRoss */,
+				3E50AB012141D97F006FBA94 /* TossRossTests */,
+				3E50AB0C2141D980006FBA94 /* TossRossUITests */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		3ACF34602141E87900F68608 /* Resources */ = {
+		3E50AAE62141D97E006FBA94 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				3ACF34712141E87900F68608 /* Main.storyboard in Resources */,
-				3ACF34682141E87900F68608 /* GameScene.sks in Resources */,
-				3ACF34732141E87B00F68608 /* Assets.xcassets in Resources */,
-				3ACF34762141E87B00F68608 /* LaunchScreen.storyboard in Resources */,
+				3E50AAF72141D97F006FBA94 /* Main.storyboard in Resources */,
+				3E50AAEE2141D97F006FBA94 /* GameScene.sks in Resources */,
+				3E50AAF92141D97F006FBA94 /* Assets.xcassets in Resources */,
+				3ACF349C2142E1C400F68608 /* oof.mp3 in Resources */,
+				3E50AAFC2141D97F006FBA94 /* LaunchScreen.storyboard in Resources */,
+				3E50AAF02141D97F006FBA94 /* Actions.sks in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		3ACF347A2141E87B00F68608 /* Resources */ = {
+		3E50AB002141D97F006FBA94 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		3ACF34852141E87B00F68608 /* Resources */ = {
+		3E50AB0B2141D980006FBA94 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -259,60 +275,60 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
-		3ACF345E2141E87900F68608 /* Sources */ = {
+		3E50AAE42141D97E006FBA94 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				3ACF346C2141E87900F68608 /* GameScene.swift in Sources */,
-				3ACF346E2141E87900F68608 /* GameViewController.swift in Sources */,
-				3ACF34662141E87900F68608 /* AppDelegate.swift in Sources */,
+				3E50AAF22141D97F006FBA94 /* GameScene.swift in Sources */,
+				3E50AAF42141D97F006FBA94 /* GameViewController.swift in Sources */,
+				3E50AAEC2141D97F006FBA94 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		3ACF34782141E87B00F68608 /* Sources */ = {
+		3E50AAFE2141D97F006FBA94 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				3ACF34812141E87B00F68608 /* TossRossTests.swift in Sources */,
+				3E50AB072141D980006FBA94 /* TossRossTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		3ACF34832141E87B00F68608 /* Sources */ = {
+		3E50AB092141D980006FBA94 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				3ACF348C2141E87B00F68608 /* TossRossUITests.swift in Sources */,
+				3E50AB122141D980006FBA94 /* TossRossUITests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		3ACF347E2141E87B00F68608 /* PBXTargetDependency */ = {
+		3E50AB042141D97F006FBA94 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 3ACF34612141E87900F68608 /* TossRoss */;
-			targetProxy = 3ACF347D2141E87B00F68608 /* PBXContainerItemProxy */;
+			target = 3E50AAE72141D97E006FBA94 /* TossRoss */;
+			targetProxy = 3E50AB032141D97F006FBA94 /* PBXContainerItemProxy */;
 		};
-		3ACF34892141E87B00F68608 /* PBXTargetDependency */ = {
+		3E50AB0F2141D980006FBA94 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 3ACF34612141E87900F68608 /* TossRoss */;
-			targetProxy = 3ACF34882141E87B00F68608 /* PBXContainerItemProxy */;
+			target = 3E50AAE72141D97E006FBA94 /* TossRoss */;
+			targetProxy = 3E50AB0E2141D980006FBA94 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		3ACF346F2141E87900F68608 /* Main.storyboard */ = {
+		3E50AAF52141D97F006FBA94 /* Main.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
-				3ACF34702141E87900F68608 /* Base */,
+				3E50AAF62141D97F006FBA94 /* Base */,
 			);
 			name = Main.storyboard;
 			sourceTree = "<group>";
 		};
-		3ACF34742141E87B00F68608 /* LaunchScreen.storyboard */ = {
+		3E50AAFA2141D97F006FBA94 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
-				3ACF34752141E87B00F68608 /* Base */,
+				3E50AAFB2141D97F006FBA94 /* Base */,
 			);
 			name = LaunchScreen.storyboard;
 			sourceTree = "<group>";
@@ -320,7 +336,7 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
-		3ACF348E2141E87B00F68608 /* Debug */ = {
+		3E50AB142141D980006FBA94 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -380,7 +396,7 @@
 			};
 			name = Debug;
 		};
-		3ACF348F2141E87B00F68608 /* Release */ = {
+		3E50AB152141D980006FBA94 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -434,7 +450,7 @@
 			};
 			name = Release;
 		};
-		3ACF34912141E87B00F68608 /* Debug */ = {
+		3E50AB172141D980006FBA94 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
@@ -452,7 +468,7 @@
 			};
 			name = Debug;
 		};
-		3ACF34922141E87B00F68608 /* Release */ = {
+		3E50AB182141D980006FBA94 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
@@ -470,19 +486,20 @@
 			};
 			name = Release;
 		};
-		3ACF34942141E87B00F68608 /* Debug */ = {
+		3E50AB1A2141D980006FBA94 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 22VHQMB54B;
 				INFOPLIST_FILE = TossRossTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 					"@loader_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = kammeron.TossRossTests;
+				PRODUCT_BUNDLE_IDENTIFIER = com.edwardshin.TossRossTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -490,19 +507,20 @@
 			};
 			name = Debug;
 		};
-		3ACF34952141E87B00F68608 /* Release */ = {
+		3E50AB1B2141D980006FBA94 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 22VHQMB54B;
 				INFOPLIST_FILE = TossRossTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 					"@loader_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = kammeron.TossRossTests;
+				PRODUCT_BUNDLE_IDENTIFIER = com.edwardshin.TossRossTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -510,18 +528,19 @@
 			};
 			name = Release;
 		};
-		3ACF34972141E87B00F68608 /* Debug */ = {
+		3E50AB1D2141D980006FBA94 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 22VHQMB54B;
 				INFOPLIST_FILE = TossRossUITests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 					"@loader_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = kammeron.TossRossUITests;
+				PRODUCT_BUNDLE_IDENTIFIER = com.edwardshin.TossRossUITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -529,18 +548,19 @@
 			};
 			name = Debug;
 		};
-		3ACF34982141E87B00F68608 /* Release */ = {
+		3E50AB1E2141D980006FBA94 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 22VHQMB54B;
 				INFOPLIST_FILE = TossRossUITests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 					"@loader_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = kammeron.TossRossUITests;
+				PRODUCT_BUNDLE_IDENTIFIER = com.edwardshin.TossRossUITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -551,43 +571,43 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		3ACF345D2141E87900F68608 /* Build configuration list for PBXProject "TossRoss" */ = {
+		3E50AAE32141D97E006FBA94 /* Build configuration list for PBXProject "TossRoss" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				3ACF348E2141E87B00F68608 /* Debug */,
-				3ACF348F2141E87B00F68608 /* Release */,
+				3E50AB142141D980006FBA94 /* Debug */,
+				3E50AB152141D980006FBA94 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		3ACF34902141E87B00F68608 /* Build configuration list for PBXNativeTarget "TossRoss" */ = {
+		3E50AB162141D980006FBA94 /* Build configuration list for PBXNativeTarget "TossRoss" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				3ACF34912141E87B00F68608 /* Debug */,
-				3ACF34922141E87B00F68608 /* Release */,
+				3E50AB172141D980006FBA94 /* Debug */,
+				3E50AB182141D980006FBA94 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		3ACF34932141E87B00F68608 /* Build configuration list for PBXNativeTarget "TossRossTests" */ = {
+		3E50AB192141D980006FBA94 /* Build configuration list for PBXNativeTarget "TossRossTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				3ACF34942141E87B00F68608 /* Debug */,
-				3ACF34952141E87B00F68608 /* Release */,
+				3E50AB1A2141D980006FBA94 /* Debug */,
+				3E50AB1B2141D980006FBA94 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		3ACF34962141E87B00F68608 /* Build configuration list for PBXNativeTarget "TossRossUITests" */ = {
+		3E50AB1C2141D980006FBA94 /* Build configuration list for PBXNativeTarget "TossRossUITests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				3ACF34972141E87B00F68608 /* Debug */,
-				3ACF34982141E87B00F68608 /* Release */,
+				3E50AB1D2141D980006FBA94 /* Debug */,
+				3E50AB1E2141D980006FBA94 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
-	rootObject = 3ACF345A2141E87900F68608 /* Project object */;
+	rootObject = 3E50AAE02141D97E006FBA94 /* Project object */;
 }

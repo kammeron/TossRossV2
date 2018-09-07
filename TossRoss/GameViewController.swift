@@ -2,20 +2,16 @@
 //  GameViewController.swift
 //  TossRoss
 //
-//  Created by Kammeron Nhieu on 9/6/18.
-//  Copyright © 2018 Kammeron Nhieu. All rights reserved.
+//  Created by Edward Shin on 9/6/18.
+//  Copyright © 2018 Edward Shin. All rights reserved.
 //
 
 import UIKit
 import SpriteKit
 import GameplayKit
-import CoreMotion
 
 class GameViewController: UIViewController {
-    
-    var motionManager = CMMotionManager()
-    let opQueue = OperationQueue()
-    
+
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -33,20 +29,13 @@ class GameViewController: UIViewController {
             
             view.showsFPS = true
             view.showsNodeCount = true
-            if motionManager.isDeviceMotionAvailable {
-                print("We can detect device motion")
-//                startReadingMotionData()
-            }
-            else {
-                print("We cannot detect device motion")
-            }
         }
     }
 
     override var shouldAutorotate: Bool {
         return true
     }
-    
+
     override var supportedInterfaceOrientations: UIInterfaceOrientationMask {
         if UIDevice.current.userInterfaceIdiom == .phone {
             return .allButUpsideDown
@@ -62,23 +51,5 @@ class GameViewController: UIViewController {
 
     override var prefersStatusBarHidden: Bool {
         return true
-    }
-    
-    func startReadingMotionData() {
-        // set read speed
-        motionManager.deviceMotionUpdateInterval = 0.0001
-        // start reading
-        motionManager.startDeviceMotionUpdates(to: opQueue) {
-            (data: CMDeviceMotion?, error: Error?) in
-            
-            if let mydata = data {
-                print("mydata", mydata.gravity)
-                print("pitch raw", mydata.attitude.pitch)
-                print("pitch", self.degrees(mydata.attitude.pitch))
-            }
-        }
-    }
-    func degrees(_ radians: Double) -> Double {
-        return 180/Double.pi * radians
     }
 }

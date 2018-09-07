@@ -2,8 +2,8 @@
 //  TossRossTests.swift
 //  TossRossTests
 //
-//  Created by Kammeron Nhieu on 9/6/18.
-//  Copyright © 2018 Kammeron Nhieu. All rights reserved.
+//  Created by Edward Shin on 9/6/18.
+//  Copyright © 2018 Edward Shin. All rights reserved.
 //
 
 import XCTest
